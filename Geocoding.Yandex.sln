@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geocoding.Yandex", "Geocoding.Yandex\Geocoding.Yandex.csproj", "{57D919EC-0F7B-4862-8848-AFEEAB7323AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geocoding.Yandex.Tests", "Geocoding.Yandex.Tests\Geocoding.Yandex.Tests.csproj", "{451D5E6C-B74D-429C-993A-22EC1C46311A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{57D919EC-0F7B-4862-8848-AFEEAB7323AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57D919EC-0F7B-4862-8848-AFEEAB7323AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57D919EC-0F7B-4862-8848-AFEEAB7323AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451D5E6C-B74D-429C-993A-22EC1C46311A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451D5E6C-B74D-429C-993A-22EC1C46311A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451D5E6C-B74D-429C-993A-22EC1C46311A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451D5E6C-B74D-429C-993A-22EC1C46311A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -9,9 +9,9 @@ Get the API key [here](https://developer.tech.yandex.ru/services/ "here")
 ## Installing
 
 ```
-Give the example
+PM> Install-Package Yandex.Geocoding
 ```
-
+Avaliable on [NuGet](https://www.nuget.org/packages/Yandex.Geocoding)
 ## Usage Example
 
 ### Simple Example

@@ -31,9 +31,9 @@ namespace Geocoding.Yandex
             }
         }
 
-        public Kind? Kind { get; set; } = null;
-        public Language? Language { get; set; } = null;
-        public int? Skip { get; set; } = null;
+        public Kind? Kind { get; set; }
+        public Language? Language { get; set; }
+        public int? Skip { get; set; }
         public Bounds Bounds { get; set; }
         public int? Results { get; set; }
         
@@ -50,12 +50,12 @@ namespace Geocoding.Yandex
 
         async Task<IEnumerable<Address>> IGeocoder.ReverseGeocodeAsync(Location location)
         {
-            throw new NotImplementedException();
+            return await ReverseGeocodeAsync(location);
         }
 
         async Task<IEnumerable<Address>> IGeocoder.ReverseGeocodeAsync(double latitude, double longitude)
         {
-            throw new NotImplementedException();
+            return await ReverseGeocodeAsync(new Location(latitude, longitude));
         }
 
         public async Task<IEnumerable<YandexAddress>> GeocodeAsync(string address,

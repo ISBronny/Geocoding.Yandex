@@ -55,7 +55,7 @@ namespace Geocoding.Yandex
 
         async Task<IEnumerable<Address>> IGeocoder.ReverseGeocodeAsync(double latitude, double longitude)
         {
-            return await ReverseGeocodeAsync(new Location(latitude, longitude));
+            return await ReverseGeocodeAsync(latitude, longitude);
         }
 
         public async Task<IEnumerable<YandexAddress>> GeocodeAsync(string address,
@@ -72,6 +72,11 @@ namespace Geocoding.Yandex
         {
             var request = BuildWebGeocodeReverseRequest($"{location.Longitude}, {location.Latitude}");
             return await ProcessRequest(request, cancellationToken).ConfigureAwait(false);
+        }
+        
+        public async Task<IEnumerable<YandexAddress>> ReverseGeocodeAsync(double latitude, double longitude,  CancellationToken cancellationToken = default(CancellationToken))
+        {
+            return await ReverseGeocodeAsync(new Location(latitude, longitude), cancellationToken);
         }
 
         private string BuildAddress(string street, string city, string state, string postalCode, string country)
